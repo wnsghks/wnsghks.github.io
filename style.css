@@ -10,3 +10,7 @@
     /* opacity: 0.5; */
     filter: brightness(50%);
 }
+
+.hide {
+    visibility: hidden;
+}

@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>travel story</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <form class="login_form">
-            <input class="login" type="text">
-            <button type="submit">Login</button>
-        </form>
+        <div class="profile">
+            <form class="login_form">
+                <input class="login" type="text">
+                <button type="submit">Login</button>
+            </form>
+            <span class="name hide"></span>    
+        </div>
 
         <div class="info">
-            <span class="weather"></span>
+            <div class="weather">
+                <span></span>
+            </div>
             <span class="clock">00:00:00</span>
         </div>
     </nav>
@@ -30,5 +35,6 @@
     <script src="./js/clock.js"></script>
     <script src="./js/background.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/weather.js"></script>
 </body>
 </html>
