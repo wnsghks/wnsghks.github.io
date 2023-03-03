@@ -1,0 +1,12 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+} */
+
+.shadow {
+    /* opacity: 0.5; */
+    filter: brightness(50%);
+}
