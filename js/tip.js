@@ -1,6 +1,6 @@
-const tipForm = document.querySelector(".tip_form");
-const tip = document.querySelector(".tip_form input");
-const tipList = document.querySelector(".tip_list");
+const tipForm = document.querySelector(".Japan .tip_form");
+const tip = document.querySelector(".Japan .tip_form input");
+const tipList = document.querySelector(".Japan .tip_list");
 
 const KEY_NAME = "story";
 let ARRAY = [];
