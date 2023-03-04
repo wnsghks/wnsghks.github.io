@@ -14,7 +14,7 @@ function saveUserName(event){
 function hide(owner){
     loginForm.classList.add("hide");   
     name.classList.remove("hide");
-    name.innerText = `${owner}'s travel story`
+    name.innerText = `Let's travel ${owner}`
 }
 
 const storage = localStorage.getItem(USERNAME);

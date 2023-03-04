@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+body {
+    background: rgba(94, 94, 94, 0.5);
+    width: 100%;
 }
 
 /* ---------------- JS CONNETCION ---------------- */
@@ -16,5 +24,84 @@
     visibility: hidden;
 }
 
-/* ---------------- DESIGN ---------------- */
+/* ---------------- NAV DESIGN ---------------- */
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+nav .profile {
+    position: relative;
+}
+
+nav .profile .name {
+    position: absolute;
+    top: 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: black;
+}
+
+nav .profile .login_form {
+    display: flex;
+    justify-content: bottom;
+}
+
+nav .profile .login_form .login {
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    width: 270px;
+    padding: 8px;
+    margin-right: 17px;
+}
+
+nav .profile .login_form .login::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+nav .profile .login_form button {
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 7px;
+}
+
+nav .info {
+    display: flex;
+    align-items: center;
+}
+
+nav .info .weather {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-right: 17px;
+}
+
+nav .info .clock {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+/* ---------------- ARTICLE DESIGN ---------------- */
+/* section {
+
+}
+
+article {
+
+}
+
+article .country_info {
+
+} */
