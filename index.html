@@ -11,7 +11,7 @@
     <nav>
         <div class="profile">
             <form class="login_form">
-                <input class="login" type="text">
+                <input class="login" type="text" placeholder="Write yout name">
                 <button type="submit">Login</button>
             </form>
             <span class="name hide"></span>    
@@ -28,7 +28,17 @@
     <section>
         <article>
             <img src="" alt="">
-            <strong class="country"></strong>
+            <div class="country_info">
+                <strong class="country"></strong>
+                <strong class="area"></strong>
+            </div>
+            <div class="tip">
+                <form class="tip_form">
+                    <input type="text" placeholder="Please write your tip!">               
+                </form>
+                <ul class="tip_list">
+                </ul>
+            </div>
         </article>
     </section>
 
@@ -36,5 +46,6 @@
     <script src="./js/background.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/weather.js"></script>
+    <script src="./js/tip.js"></script>
 </body>
 </html>
