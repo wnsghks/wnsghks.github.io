@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,6 +7,7 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -15,18 +17,27 @@ body {
 }
 
 /* ---------------- JS CONNETCION ---------------- */
-/* .shadow {
+.shadow {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: ;
-    image-size: cover;
+    width: 100%;
+    height: 100vh;
     opacity: 0.5;
     z-index: -9999;
-} */
+}
 
 .hide {
     visibility: hidden;
+}
+
+.AD {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 610px;
+    height: 100%;
+    z-index: 1;
 }
 
 /* ---------------- NAV DESIGN ---------------- */
@@ -44,6 +55,7 @@ nav .profile {
 }
 
 nav .profile .name {
+    cursor: default;
     position: absolute;
     top: 0;
     font-size: 21px;
@@ -66,7 +78,7 @@ nav .profile .login_form .login {
 }
 
 nav .profile .login_form .login::placeholder {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     color: black;
 }
@@ -78,13 +90,15 @@ nav .profile .login_form .login:focus {
 nav .profile .login_form button {
     border: none;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.5);
     font-size: 14px;
-    font-weight: 500;
-    padding: 6px 7px;
+    font-weight: 400;
+    padding: 0 10px;
+    color: white;
 }
 
 nav .info {
+    cursor: default;
     display: flex;
     align-items: center;
 }
@@ -121,6 +135,7 @@ article {
     height: 650px;
     margin-right: 20px;
     transition-duration: 1000ms;
+    overflow: hidden;
 }
 
 article:nth-child(2n) {
@@ -153,6 +168,9 @@ article:not(.action) .country_info {
     font-weight: 400;
     transition-delay: 400ms;
     transition-duration: 500ms;
+    z-index: 2;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 article.action .country_info {
@@ -162,30 +180,35 @@ article.action .country_info {
     font-size: 18px;
     font-weight: 400;
     transition-duration: 500ms;
+    z-index: 2;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 article .information {
     display: flex;
     flex-direction: column;
     top: 80px;
-    background: rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 20px #b3b3b3;
+    background:rgba(255, 255, 255, 0.8) ;
+    box-shadow: 1px 1px 15px #5e5e5e;
     border-radius: 20px;
     width: 250px;
-    height: 210px;
-    padding: 20px;
-    margin: 100px 0 30px 30px;
-    
+    height: 250px;
+    padding: 8px 20px;
+    margin: 80px 0 30px 30px;
+    z-index: 2;
 }
 
 article.action .information {
     transition-delay: 500ms;
+    z-index: 2;
 }
 
 article .information h1 {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 15px;
+    z-index: 2;
 }
 
 article .information span {
@@ -193,34 +216,37 @@ article .information span {
     font-weight: 400;
     margin-bottom: 15px;
     color: black;
-
+    z-index: 2;
 }
 
 article .information span:last-child:hover {
-    color: #a0d3d6;
+    color: #6791c7;
+    z-index: 2;
 }
 
 article .tip {
     flex-direction: column;
     align-items: center;
     top: 80px;
-    background: rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 20px #b3b3b3;
+    background:rgba(255, 255, 255, 0.8) ;
+    box-shadow: 1px 1px 20px #5e5e5e;
     border-radius: 20px;
     width: 250px;
-    height: 270px;
+    height: 250px;
     margin-left: 30px;
+    z-index: 2;
 }
 
 article.action .tip {
     transition-delay: 500ms;
+    z-index: 2;
 }
 
 article .tip .tip_form {
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    
+    z-index: 2;    
 }
 
 article .tip .tip_form input {
@@ -229,6 +255,7 @@ article .tip .tip_form input {
     background: none;
     width: 180px;
     padding: 4px;
+    z-index: 2;
 }
 
 article .tip .tip_form input::placeholder {
@@ -245,17 +272,19 @@ article .tip .tip_list {
     font-size: 14px;
     font-weight: 400;
     width: 200px;
-    height: 220px;
+    height: 180px;
     display: flex;
     flex-direction: column;
-    margin: 15px 35px;
+    margin: 10px 35px;
     overflow: scroll;
+    z-index: 2;
 }
 
 article .tip .tip_list li {
     position: relative;
     list-style-type:square;
     list-style-position: inside;
+    z-index: 2;
 }
 
 article .tip .tip_list li button {
@@ -264,6 +293,7 @@ article .tip .tip_list li button {
     margin-right: 13px;
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
+    z-index: 2;
 }
 
