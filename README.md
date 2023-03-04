@@ -1,2 +1,2 @@
 # wnsghks.github-io
- travel review journal
+ travel tip, info
